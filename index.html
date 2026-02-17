@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Guitar Tabs App</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@coderline/alphatab@latest/dist/alphaTab.js"></script>
+  <script src="js/app.js" defer></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+      background: #111;
+      color: white;
+    }
+
+    #alphaTab {
+      background: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    select,
+    button {
+      font-size: 16px;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    /* Ukrywa wszystkie elementy typu 'Score' (nuty) wewnątrz alphaTab */
+    .at-score-stave {
+      display: none !important;
+    }
+
+    /* Opcjonalnie, jeśli chcesz ukryć tylko linie nutowe */
+    .at-main-staff {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Guitar Tabs</h1>
+
+  <select id="tabSelector"></select>
+  <button id="playBtn">Play</button>
+  <button id="pauseBtn">Pause</button>
+  <br>
+  <a id="youtube-link" href="" target="_blank">youtube</a>
+
+  <div id="alphaTab"></div>
+
+</body>
+
+</html>
