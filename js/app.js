@@ -29,7 +29,7 @@ function populateSelector() {
 }
 
 function loadTab(file) {
-  if (api) api.dispose();
+  if (api) api.destroy();
 
   const container = document.getElementById('alphaTab');
   
